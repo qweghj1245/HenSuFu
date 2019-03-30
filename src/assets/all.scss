@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/functions";
+@import "./helper/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "./mixin";
+@import "./utility";
+@import "./media";
+
+// dashboard
+@import "./dashboard/dashboard";
+
+// homepage
+@import "./homepage/home";
+@import "./homepage/shop";
+@import "./homepage/product";
+@import "./homepage/customerOrder";

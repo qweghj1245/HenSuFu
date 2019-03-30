@@ -1,0 +1,35 @@
+.text-fz
+    font-size: $font-size-base * 1.1
+.bg-cover
+    +bg-cover(center)
+.jumbo-bg
+    min-height: 750px
+    +bg-cover(center)
+    & .bg-lighter
+        background-color: rgba(255, 255, 255, .6)
+        & .header__title
+            +media-breakpoint-down(md)
+                font-size: $display5-size
+.article__card
+    position: relative
+    overflow: hidden
+    &:hover .article__card-bg .article__card-text
+        +size(100%, 100%)
+        +flex-center
+        background-color: rgba(theme-color('light'), .8)
+        position: absolute
+        font-size: $font-size-base * 1.5
+        color: $white
+        letter-spacing: 7.5px
+        transition-duration: .3s
+    & .article__card-image
+        +img-full
+        +bg-cover(bottom)
+
+.article__show__card-text
+    z-index: 1
+    font-size: $font-size-base * 1.5
+    +size(100%, 100%)
+    +flex-center
+    letter-spacing: 7.5px
+    position: absolute
